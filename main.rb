@@ -1,5 +1,5 @@
 require 'io/console'
-require './user'
+require './lib/user'
 
 class Game
   attr_accessor :user1, :user2

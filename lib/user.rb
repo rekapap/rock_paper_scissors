@@ -1,4 +1,4 @@
-require './choice'
+require './lib/choice'
 
 class User
   attr_accessor :name, :choice

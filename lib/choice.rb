@@ -1,6 +1,6 @@
-require './rock'
-require './paper'
-require './scissors'
+require './lib/rock'
+require './lib/paper'
+require './lib/scissors'
 
 class Choice
   attr_reader :type
