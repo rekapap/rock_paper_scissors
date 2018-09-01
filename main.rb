@@ -37,7 +37,7 @@ class Game
   end
 
   def run
-    puts "4!\n3!\n1!\nOFFBLAST!\n" # countdown string
+    puts "5!\n4!\n3!\n1!\nOFFBLAST!\n" # countdown string
     get_choice(@user1)
     get_choice(@user2)
     icon # display icons
