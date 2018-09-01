@@ -1,7 +1,9 @@
 require 'io/console'
 require './lib/user'
+require './lib/event'
 
 class Game
+  include Event
   attr_accessor :user1, :user2
   def initialize(user1, user2)
     @user1 = User.new(user1)
@@ -34,9 +36,15 @@ class Game
       run
     else 
       winner = @user1
-      winner = @user2 if @user2.choice.type.win == @user1.choice.type.name
-      @winner = winner.name
-      puts "\nThe winner is...\n#{@winner}!\n\nWho win next? You decide!\n\n" # displaying winner + outro string
+      loser  = @user2
+      if @user2.choice.type.win.include?(@user1.choice.type.name)
+        winner = @user2
+        loser  = @user1
+      end
+      event_key = "#{winner.choice.type.name}_#{loser.choice.type.name}".to_sym
+      puts ''
+      puts @@event[event_key].to_s
+      puts "\nThe winner is...\n#{winner.name}!\n\nWho wins next? You decide!\n\n" # displaying winner + outro string
     end
   end
 

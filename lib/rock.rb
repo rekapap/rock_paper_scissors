@@ -2,7 +2,7 @@ class Rock
   attr_reader :name, :win, :icon
   def initialize
     @name = 'rock'
-    @win = 'scissors'
+    @win = %w[scissors lizard]
     @icon = '✊'
   end
 end

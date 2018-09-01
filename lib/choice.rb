@@ -1,6 +1,8 @@
 require './lib/rock'
 require './lib/paper'
 require './lib/scissors'
+require './lib/spock'
+require './lib/lizard'
 
 class Choice
   attr_reader :type
@@ -13,6 +15,10 @@ class Choice
       @type = Paper.new
     when 'scissors'
       @type = Scissors.new
+    when 'lizard'
+      @type = Lizard.new
+    when 'spock'
+      @type = Spock.new
     else
       raise ArgumentError.new('No such a move!')
     end
