@@ -1,7 +1,7 @@
-class Scissor
+class Scissors
   attr_reader :name, :win, :icon
   def initialize
-    @name = 'scissor'
+    @name = 'scissors'
     @win = 'paper'
     @icon = '✌'
   end

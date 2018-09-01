@@ -1,22 +1,21 @@
 require './rock'
 require './paper'
-require './scissor'
+require './scissors'
 
 class Choice
-  attr_reader :name, :type
+  attr_reader :type
 
   def initialize(name)
-    @name = name
     case name.downcase
     when 'rock'
       @type = Rock.new
     when 'paper'
       @type = Paper.new
-    when 'scissor'
-      @type = Scissor.new
+    when 'scissors'
+      @type = Scissors.new
     else
-      puts 'No such a move!'
+      raise ArgumentError.new('No such a move!')
     end
   end
-  
+
 end

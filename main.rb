@@ -14,10 +14,14 @@ class Game
       puts "What is #{player.name}'s choice?"
       choice = STDIN.noecho(&:gets).chomp.downcase # hides the input
       puts ''
-      break if choice == 'rock' || choice == 'paper' || choice == 'scissor' 
-      puts 'No such a move!'
+      begin
+        player.set_choice(choice)
+        break
+      rescue
+        puts 'No such a move!'
+      end
     end
-    player.set_choice(choice)
+    
   end
 
   def icon
