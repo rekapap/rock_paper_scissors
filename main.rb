@@ -21,7 +21,7 @@ class Game
         puts 'No such a move!'
       end
     end
-    
+
   end
 
   def icon
@@ -51,6 +51,6 @@ class Game
 end
 
 if __FILE__ == $PROGRAM_NAME
-  Main = Game.new('Jane', 'John') # Player's names
-  Main.run
+  main = Game.new('Jane', 'John') # Player's names
+  main.run
 end
