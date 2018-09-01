@@ -21,11 +21,11 @@ main = Game.new('Jane', 'John') # Player's names
 ## Notes
 
 * You can use:
- * 'rock'
- * 'paper'
- * 'scissors'
- * 'lizard'
- * 'Spock' for your choice.
+  * 'rock'
+  * 'paper'
+  * 'scissors'
+  * 'lizard'
+  * 'Spock' for your choice.
 * The choices are not case-sensitive.
 * Don't get suprised if you don't see what you typed, because it's _invisible_.
   (To ensure noone is cheating.😒)
