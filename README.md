@@ -20,7 +20,7 @@ main = Game.new('Jane', 'John') # Player's names
 
 ## Notes
 
-* You can use 'rock' or 'paper' or 'scissors' for your choice.
+* You can use 'rock' or 'paper' or 'scissors' or 'lizard' or 'Spock' for your choice.
 * The choices are not case-sensitive.
 * Don't get suprised if you don't see what you typed, because it's _invisible_.
   (To ensure noone is cheating.😒)
@@ -35,3 +35,4 @@ main = Game.new('Jane', 'John') # Player's names
 ## Game rules
 
 [Wikipedia on Rock Paper Scissors](https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors)
+[Rock Paper Scissors Lizard Spock Game](http://bigbangtheory.wikia.com/wiki/Rock_Paper_Scissors_Lizard_Spock)
